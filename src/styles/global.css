@@ -60,33 +60,3 @@ a {
   padding: 2.5rem 2rem;
 
 }
-
-.experience-bar {
-  align-items: center;
-  display: flex;
-}
-
-.experience-bar span {
-  font-size: 1rem;
-}
-
-.experience-bar>div {
-  background: var(--gray-line);
-  border-radius: 4px;
-  flex: 1;
-  height: 4px;
-  margin: 0 1.5rem;
-  position: relative;
-}
-
-.experience-bar>div>div {
-  background: var(--green);
-  border-radius: 4px;
-  height: 4px;
-}
-
-span.current-experience {
-  position: absolute;
-  transform: translateX(-50%);
-  top: 12px;
-}
