@@ -6,7 +6,10 @@ const Profile = () => {
       <img src="https://github.com/henriquecrono.png" alt="HEnrique Przybysz" />
       <div>
         <strong>Henrique Przybysz</strong>
-        <p>Level 1</p>
+        <p>
+          <img src="icons/level.svg" alt="Level"/>
+          Level 1
+          </p>
       </div>
     </div>
   );
