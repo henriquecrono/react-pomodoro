@@ -4,7 +4,7 @@ import challenges from '../../challenges.json';
 
 
 interface Challenge {
-  body: 'body' | 'eye';
+  type: 'body' | 'eye';
   description: string;
   amount: number;
 };
@@ -36,6 +36,9 @@ const ChallengesProvider = ({ children }: ChallengesProviderProps) => {
 
   const startNewChallenge = () => {
     const randomChallengeIndex = Math.floor(Math.random() * challenges.length);
+    const challenge = challenges[randomChallengeIndex];
+
+    setActiveChallenge(challenge);
   };
 
   return (
