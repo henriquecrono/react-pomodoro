@@ -9,4 +9,6 @@ const CompletedChallenges = () => {
   );
 };
 
-export default CompletedChallenges;
+export {
+  CompletedChallenges
+};

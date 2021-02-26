@@ -16,4 +16,6 @@ const ExperienceBar = () => {
   );
 };
 
-export default ExperienceBar;
+export {
+  ExperienceBar
+};

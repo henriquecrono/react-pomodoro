@@ -45,4 +45,6 @@ const ChallengeBox = () => {
   );
 };
 
-export default ChallengeBox;
+export {
+  ChallengeBox
+};

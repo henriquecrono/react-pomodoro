@@ -90,4 +90,6 @@ const Countdown = () => {
   );
 };
 
-export default Countdown;
+export {
+  Countdown
+};
