@@ -8,18 +8,17 @@ import styles from '../styles/components/ChallengeBox.module.css';
 
 const ChallengeBox = () => {
   const { activeChallenge, resetChallenge, completeChallenge } = useContext(ChallengesContext);
-  const {resetCountdown } = useContext(CountdownContext);
+  const { resetCountdown } = useContext(CountdownContext);
 
   const handleChallengeSucceeded = () => {
     completeChallenge();
     resetCountdown();
   };
-  
+
   const handleChallengeFailed = () => {
     resetChallenge()
     resetCountdown();
   };
-
 
   return (
     <div className={styles.challengeBoxContainer}>
