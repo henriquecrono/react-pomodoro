@@ -5,7 +5,7 @@ import { ChallengesContext } from '../contexts/ChallengesContext';
 import styles from '../styles/components/CompletedChallenges.module.css';
 
 
-const CompletedChallenges = () => {
+export const CompletedChallenges = () => {
   const { challengesCompleted } = useContext(ChallengesContext);
 
   return (
@@ -14,8 +14,4 @@ const CompletedChallenges = () => {
       <span>{challengesCompleted}</span>
     </div>
   );
-};
-
-export {
-  CompletedChallenges
 };

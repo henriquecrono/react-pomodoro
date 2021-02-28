@@ -27,9 +27,9 @@ interface ChallengesProviderProps {
   children: ReactNode;
 };
 
-const ChallengesContext = createContext({} as ChallengesContextData);
+export const ChallengesContext = createContext({} as ChallengesContextData);
 
-const ChallengesProvider = ({ children }: ChallengesProviderProps) => {
+export const ChallengesProvider = ({ children }: ChallengesProviderProps) => {
   const [level, setLevel] = useState(1);
   const [currentExperience, setCurrentExperience] = useState(0);
   const [challengesCompleted, setChallengesCompleted] = useState(0);
@@ -105,8 +105,3 @@ const ChallengesProvider = ({ children }: ChallengesProviderProps) => {
     </ChallengesContext.Provider>
   );
 };
-
-export {
-  ChallengesContext,
-  ChallengesProvider
-}

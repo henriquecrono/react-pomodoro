@@ -6,7 +6,7 @@ import { CountdownContext } from '../contexts/CountdownContext';
 import styles from '../styles/components/ChallengeBox.module.css';
 
 
-const ChallengeBox = () => {
+export const ChallengeBox = () => {
   const { activeChallenge, resetChallenge, completeChallenge } = useContext(ChallengesContext);
   const { resetCountdown } = useContext(CountdownContext);
 
@@ -63,8 +63,4 @@ const ChallengeBox = () => {
       }
     </div>
   );
-};
-
-export {
-  ChallengeBox
 };

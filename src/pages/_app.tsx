@@ -3,7 +3,7 @@ import { ChallengesProvider } from '../contexts/ChallengesContext';
 import '../styles/global.css';
 
 
-function MyApp({ Component, pageProps }) {
+const MyApp = ({ Component, pageProps }) => {
   return (
     <ChallengesProvider>
       <Component {...pageProps} />
@@ -11,4 +11,4 @@ function MyApp({ Component, pageProps }) {
   )
 }
 
-export default MyApp
+export default MyApp;

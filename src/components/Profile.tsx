@@ -5,7 +5,7 @@ import { ChallengesContext } from '../contexts/ChallengesContext';
 import styles from '../styles/components/Profile.module.css';
 
 
-const Profile = () => {
+export const Profile = () => {
   const { level } = useContext(ChallengesContext);
 
   return (
@@ -20,8 +20,4 @@ const Profile = () => {
       </div>
     </div>
   );
-};
-
-export {
-  Profile
 };
